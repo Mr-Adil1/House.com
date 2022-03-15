@@ -106,7 +106,7 @@ ScrollReveal: https://scrollrevealjs.org/
                     position: relative;
                     margin-top: auto;
                     background-color: var(--main-color);
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/background\ \(2\).jpg);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://images.unsplash.com/photo-1605146769289-440113cc3d00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG91c2UlMjBmb3IlMjBzYWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60);
                     background-size: cover;
                     background-position: center;
                     background-attachment: fixed;
