@@ -1,0 +1,356 @@
+                /*::links
+Icons: https://boxicons.com,
+Fonts: https://fonts.google.com/,
+ScrollReveal: https://scrollrevealjs.org/
+*/
+                
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+                * {
+                    box-sizing: border-box;
+                    font-family: 'poppins', sans-serif;
+                    padding: 0;
+                    margin: 0;
+                    scroll-padding-top: 2rem;
+                    scroll-behavior: smooth;
+                    list-style: none;
+                    text-decoration: none;
+                }
+                
+                 :root {
+                    --main-color: #03e9f4;
+                    --anker-color: #fff;
+                    --text-color: rgb(42, 42, 53);
+                    --heading-color: #000;
+                }
+                /*-----scrollbar-----*/
+                
+                html::-webkit-scrollbar {
+                    width: 0.5rem;
+                }
+                
+                html::-webkit-scrollbar-track {
+                    background: transparent;
+                }
+                
+                html::-webkit-scrollbar-thumb {
+                    border-radius: 0.5rem;
+                    background: var(--main-color);
+                }
+                
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 100%;
+                    height: 70px;
+                    padding: 0 50px;
+                    left: 0;
+                    top: 0;
+                    align-items: center;
+                    background: #dadada;
+                    position: sticky;
+                    z-index: 1000;
+                }
+                
+                header .bx-menu {
+                    color: #000;
+                    font-size: 2rem;
+                    display: none;
+                    padding: 0 10px;
+                }
+                
+                .logo h1 {
+                    color: var(--main-color);
+                }
+                
+                .navbar {
+                    display: flex;
+                    padding: 0 20px;
+                    align-items: center;
+                }
+                
+                .navbar ul {
+                    display: flex;
+                    padding: 0 30px;
+                }
+                
+                .navbar ul li {
+                    position: relative;
+                }
+                
+                .navbar a {
+                    padding: 10px;
+                    color: var(--text-color);
+                    font-size: 1rem;
+                }
+                
+                .navbar ul li a:hover {
+                    color: rgb(31, 31, 243);
+                }
+                
+                .sign-in a {
+                    border: 1px solid var(--main-color);
+                    border-radius: 0.5rem;
+                    padding: 8px 10px;
+                    background: transparent;
+                }
+                
+                .sign-in a:hover {
+                    color: var(--anker-color);
+                    background: var(--main-color);
+                }
+                /*----home---*/
+                
+                .home {
+                    width: 100%;
+                    min-height: 100vh;
+                    position: relative;
+                    margin-top: auto;
+                    background-color: var(--main-color);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/background\ \(2\).jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-attachment: fixed;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .home-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .text h2 {
+                    font-size: 2.5rem;
+                    letter-spacing: 2px;
+                    color: var(--anker-color);
+                }
+                
+                .search {
+                    display: flex;
+                    background: #fff;
+                    border-radius: 0.5rem;
+                }
+                
+                .search input {
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    padding: 10px 10px;
+                    border-radius: 0.5rem;
+                }
+                
+                .search .btn {
+                    border: none;
+                    outline: none;
+                    padding: 10px 20px;
+                    background: var(--main-color);
+                    color: var(--anker-color);
+                    font-size: 1.3rem;
+                    cursor: pointer;
+                }
+                /*----services----*/
+                
+                .heading {
+                    text-align: center;
+                    position: relative;
+                    top: 3rem;
+                }
+                
+                .heading h2 {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                
+                .services-container {
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+                    grid-gap: 1rem;
+                    margin-top: 5rem;
+                }
+                
+                .services-container .box {
+                    border: 1px solid #eee;
+                    background: #fff;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    height: 100%;
+                    flex-basis: 32%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 370px;
+                    box-shadow: rgb(209 209 213) 0px 5px 15px;
+                    cursor: pointer;
+                }
+                
+                .services-container .box:hover {
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+                
+                .services-container .box-img img {
+                    width: 100%;
+                }
+                
+                .dec {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+                
+                .services-container .dec h4 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-top: auto;
+                }
+                
+                .dec p {
+                    color: rgb(42, 42, 51);
+                    -webkit-font-smoothing: antialiased;
+                    margin-top: auto;
+                    text-transform: none;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin: 16px 0px 0px;
+                }
+                
+                .btn-div {
+                    margin-top: auto;
+                }
+                
+                .services-container .btn-div .btn {
+                    padding: 10px 20px;
+                    border: 1px solid var(--main-color);
+                    border-radius: 0.5rem;
+                    background: #dadada;
+                    color: var(--tect-color);
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+                
+                .services-container .btn-div .btn:hover {
+                    background: var(--main-color);
+                }
+                /*---about---*/
+                
+                .about-container {
+                    width: 100%;
+                    flex: 0 0 auto;
+                    max-width: 768px;
+                    padding: 20px;
+                }
+                
+                .about-container .dec .paragraph {
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin-bottom: 16px;
+                }
+                /*--footer--*/
+                
+                .footer-content {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 50px;
+                }
+                
+                .appstor {
+                    text-align: center;
+                    margin-top: 2rem;
+                }
+                
+                .appstor img {
+                    width: 15%;
+                    padding: 10px;
+                }
+                
+                .social-links {
+                    display: flex;
+                    padding: 10px;
+                }
+                
+                .social-links a {
+                    font-size: 20px;
+                }
+                
+                @media screen and (max-width: 1000px) {
+                    header {
+                        padding: 0 10px;
+                    }
+                }
+                
+                @media screen and (max-width: 900px) {
+                    header {
+                        padding: 0 5px;
+                    }
+                    header .logo h1 {
+                        font-size: 25px;
+                    }
+                    .services-container {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .home {
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+                
+                @media screen and (max-width: 845px) {
+                    .home {
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://images.unsplash.com/photo-1544984243-ec57ea16fe25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmVhdXRpZnVsJTIwaG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+                    }
+                    header .bx-menu {
+                        display: initial;
+                    }
+                    .navbar ul {
+                        position: absolute;
+                        top: -500px;
+                        width: 100%;
+                        height: 50vh;
+                        left: 0;
+                        display: block;
+                        background: #fff;
+                        transition: 0.5s ease;
+                        z-index: -1;
+                    }
+                    .navbar ul.down {
+                        top: 100%;
+                    }
+                    .navbar ul li {
+                        padding: 10px;
+                    }
+                }
+                
+                @media screen and (max-width: 680px) {
+                    .home {
+                        /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://thumbs.dreamstime.com/b/portrait-happy-young-caucasian-husband-wife-posing-their-new-house-holding-cardboard-boxes-moving-looking-215245177.jpg); */
+                    }
+                }
+                
+                @media screen and (max-width: 499px) {
+                    .text h2 {
+                        font-size: 2rem;
+                    }
+                    .heading h2 {
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                    .sign-in a {
+                        padding: 5px 8px;
+                    }
+                    .sign-in .bx-user {
+                        display: none;
+                    }
+                }
