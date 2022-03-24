@@ -1,1 +1,1 @@
-link : https://mrdeveloperr.github.io-House.com/
+link : https://mrdeveloperr.github.io/House.com/
